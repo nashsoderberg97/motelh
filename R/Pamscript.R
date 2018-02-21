@@ -33,6 +33,20 @@ pam16$date <- as.Date("2018-02-16")
 
 pamtotal <- rbind(pam31, pam02, pam05, pam07, pam09, pam12, pam14, pam16)
             
-
-boxplot(pamtotal$Fv.Fm~pam1$newcolumn)
+boxplot(pamtotal$Fv.Fm~pamtotal$date)
 anova(lm(pam1$Fv.Fm~pam1$Tank))
+
+#reads treatment from tank and puts in column "treatment" of pamtotal
+pamtotal$treatment <- substr(pamtotal$Tank, 4, 5)
+
+control <- subset(pamtotal, treatment == "C")
+
+boxplot(control$Fv.Fm~control$date)
+
+light <- subset(pamtotal, treatment == "HL")
+
+boxplot(light$Fv.Fm~light$date)
+
+heat <- subset(pamtotal, treatment == "HT")
+
+boxplot(heat$Fv.Fm~heat$date)
