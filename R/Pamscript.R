@@ -1,4 +1,4 @@
-
+#Loads pam data, then takes the columns with data, then reads the date column as dates
 pam31 <- read.table(file = "data/pam/pam20180131.tsv", fill = TRUE, header = T, sep = "\t")
 pam31 <- pam31[,1:3]
 pam31$date <- as.Date("2018-01-31")
@@ -31,7 +31,11 @@ pam16 <- read.table(file = "data/pam/pam20180216.tsv", fill = TRUE, header = T, 
 pam16 <- pam16[,1:3]
 pam16$date <- as.Date("2018-02-16")
 
-pamtotal <- rbind(pam31, pam02, pam05, pam07, pam09, pam12, pam14, pam16)
+pam23 <- read.table(file = "data/pam/pam20180223.tsv", fill = TRUE, header = T, sep = "\t")
+pam23 <- pam23[,1:3]
+pam23$date <- as.Date("2018-02-23")
+
+pamtotal <- rbind(pam31, pam02, pam05, pam07, pam09, pam12, pam14, pam16, pam23)
             
 boxplot(pamtotal$Fv.Fm~pamtotal$date)
 anova(lm(pam1$Fv.Fm~pam1$Tank))
