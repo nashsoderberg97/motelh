@@ -39,7 +39,11 @@ pam28 <- read.table(file = "data/pam/pam20180228.tsv", fill = TRUE, header = T, 
 pam28 <- pam28[,1:3]
 pam28$date <- as.Date("2018-02-28")
 
-pamtotal <- rbind(pam31, pam02, pam05, pam07, pam09, pam12, pam14, pam16, pam23, pam28)
+pam21 <- read.table(file = "data/pam/pam20180321.tsv", fill = TRUE, header = T, sep = "\t")
+pam21 <- pam21[,1:3]
+pam21$date <- as.Date("2018-03-21")
+
+pamtotal <- rbind(pam31, pam02, pam05, pam07, pam09, pam12, pam14, pam16, pam23, pam28, pam21)
             
 boxplot(pamtotal$Fv.Fm~pamtotal$date)
 anova(lm(pam1$Fv.Fm~pam1$Tank))
