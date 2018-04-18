@@ -1,0 +1,27 @@
+---
+title: "qpcr analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = normalizePath(".."))
+```
+
+##Load R Package
+This will load the R package devtools (installation script commented in), as well as the code for the qPCR plates
+```{r libraries}
+library(devtools)  # install.packages("devtools")
+devtools::install_github("jrcunning/steponeR")
+```
+##Loading qPCR Data from a Text File
+This will load a .txt file and read the data in it to calculate symbiont/host cell ratios. *NOTE*: in future will need to add a few arguments (flour.num, copy.number, ploidy, extract) in order to use data. For help use "?steponeR"
+```{r load_data}
+plates <- list.files(path = "data/qpcr", pattern = ".txt", full.names = TRUE)
+plates
+steponeR(files = plates, delim = "\t", target.ratios = list("C.D"), fluor.norm = list(C = 0, D = 0, Ssid = 0))
+```
+*NOTE*: The object "plates" is a list of all of the .txt files in the data/qpcr folder
+
+
+
