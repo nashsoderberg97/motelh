@@ -1,0 +1,66 @@
+---
+title: "heatstress_may2018.Rmd"
+author: "Ross Cunning"
+date: "5/28/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(stringr)
+library(janitor)
+```
+
+# Build sample metadata sheet
+```{r}
+# Import Jan 31 PAM file -- has coral id and first treatment and tank info
+d1 <- read_tsv("data/pam/pam20180131.tsv") %>%
+  clean_names() %>%
+  select(coral_id, tank) %>%
+  separate(tank, into = c("tank1", "trt"), remove = FALSE) %>%
+  select(coral_id, tank, trt) %>%
+  rename(tank1 = tank, trt1 = trt)
+
+# Import May PAM file -- has coral id and second treatment and tank info
+d2 <- read_tsv("data/pam/pam20180523.tsv") %>%
+  clean_names() %>%
+  select(coral_id, tank)
+# Fix tank ids
+str_sub(d2$tank, 3, 2) <- "-"
+# Separate into treatment column
+d2 <- d2 %>% 
+  separate(tank, into = c("tank2", "trt"), remove = FALSE) %>%
+  select(coral_id, tank, trt) %>%
+  rename(tank2 = tank, trt2 = trt)
+
+smd <- full_join(d1, d2)
+```
+
+# Import PAM data
+```{r}
+# Get May 2018 PAM files
+pamfiles <- list.files(path = "data/pam", pattern = "201805", full.names = TRUE)   
+
+# Read in PAM data
+pamdata <- data_frame(filename = pamfiles) %>%           # Create data frame with filenames
+  mutate(file_contents = map(filename, read_tsv)) %>%    # Read in file contents
+  unnest() %>%                                           # Unnest file contents
+  clean_names() %>%                                      # Clean column names
+  mutate(date = as.Date(str_extract(filename, pattern = "2018...."), format = "%Y%m%d")) %>% # Add date
+  select(tank, coral_id, date, fv_fm)                    # Select first four columns
+
+# Merge with sample metadata
+pamdata <- full_join(smd, pamdata)
+
+# Plot
+ggplot(pamdata, aes(x = date, y = fv_fm, color = trt1)) +
+  facet_wrap(~ tank) + geom_point() + geom_smooth(method = "loess")
+```
+
+
+
+
