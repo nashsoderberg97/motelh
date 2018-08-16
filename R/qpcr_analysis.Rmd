@@ -13,13 +13,26 @@ This will load the R package devtools (installation script commented in), as wel
 ```{r libraries}
 library(devtools)  # install.packages("devtools")
 devtools::install_github("jrcunning/steponeR")
+library(steponeR)
 ```
+
 ##Loading qPCR Data from a Text File
 This will load a .txt file and read the data in it to calculate symbiont/host cell ratios. *NOTE*: in future will need to add a few arguments (flour.num, copy.number, ploidy, extract) in order to use data. For help use "?steponeR"
 ```{r load_data}
 plates <- list.files(path = "data/qpcr", pattern = ".txt", full.names = TRUE)
 plates
-steponeR(files = plates, delim = "\t", target.ratios = list("C.D"), fluor.norm = list(C = 0, D = 0, Ssid = 0))
+
+df <- steponeR(files = plates, 
+         delim = "\t", 
+         target.ratios = c("C.Ssid", "D.Ssid"), 
+         fluor.norm = list(C = 0, D = 0, Ssid = 0),
+         copy.number = list(C = 20, D = 1, Ssid = 1),
+         ploidy = list(C=1, D=1, Ssid=2),
+         extract = list(C=0.813, D=0.813, Ssid=0.982))
+df$result
+
+## Plates 6 and 7 are causing an error
+plates[6:7]
 ```
 *NOTE*: The object "plates" is a list of all of the .txt files in the data/qpcr folder
 
