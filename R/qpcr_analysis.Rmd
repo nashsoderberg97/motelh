@@ -29,10 +29,9 @@ df <- steponeR(files = plates,
          copy.number = list(C = 20, D = 1, Ssid = 1),
          ploidy = list(C=1, D=1, Ssid=2),
          extract = list(C=0.813, D=0.813, Ssid=0.982))
-df$result
+qpcr <- df$result
 
-## Plates 6 and 7 are causing an error
-plates[6:7]
+qpcr
 ```
 *NOTE*: The object "plates" is a list of all of the .txt files in the data/qpcr folder
 
