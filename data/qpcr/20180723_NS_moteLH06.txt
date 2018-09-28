@@ -22,7 +22,7 @@
 * Calibration Uniformity is expired  = No
 * Calibration Uniformity performed on = 03-02-2017
 * Chemistry = TAQMAN
-* Date Created = 2018-07-27 11:27:50 AM PDT
+* Date Created = 2018-09-28 13:18:51 PM PDT
 * Experiment Barcode = NA
 * Experiment Comment = NA
 * Experiment File Name = D:\Users\INSTR-ADMIN\experiments\Nash\20180723_NS_moteLH06.eds
@@ -41,142 +41,142 @@
 * User Name = NA
 
 [Results]
-Well	Well Position	Omit	Sample Name	Target Name	Task	Reporter	Quencher	CT	Ct Mean	Ct SD	Quantity	Quantity Mean	Quantity SD	Y-Intercept	R(superscript 2)	Slope	Efficiency	Automatic Ct Threshold	Ct Threshold	Automatic Baseline	Baseline Start	Baseline End	Amp Status	Comments	Cq Conf	THOLDFAIL	CQCONF	EXPFAIL	HIGHSD	NOAMP
-2	A2	false	Sample 1	Ssid	UNKNOWN	SYBR	None	29.861	29.226	0.898								true	0.040	true	3	27	Amp		0.973	Y	N	N	Y	N
-3	A3	false	Sample 1	Ssid	UNKNOWN	SYBR	None	28.591	29.226	0.898								true	0.040	true	3	26	Amp		0.975	Y	N	N	Y	N
-4	A4	false	Sample 1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-4	A4	false	Sample 1	D	UNKNOWN	FAM	NFQ-MGB	31.053	31.109	0.079								true	0.126	true	3	26	Amp		0.961	N	N	N	N	N
-5	A5	false	Sample 1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-5	A5	false	Sample 1	D	UNKNOWN	FAM	NFQ-MGB	31.165	31.109	0.079								true	0.126	true	3	26	Amp		0.959	N	N	N	N	N
-6	A6	false	Sample 9	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-7	A7	false	Sample 9	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-8	A8	false	Sample 9	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-8	A8	false	Sample 9	D	UNKNOWN	FAM	NFQ-MGB	34.909	34.760	0.210								true	0.126	true	3	30	Amp		0.935	N	N	N	N	N
-9	A9	false	Sample 9	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-9	A9	false	Sample 9	D	UNKNOWN	FAM	NFQ-MGB	34.611	34.760	0.210								true	0.126	true	3	29	Amp		0.938	N	N	N	N	N
-10	A10	false	Sample 17	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-11	A11	false	Sample 17	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-13	B1	false	Sample 2	Ssid	UNKNOWN	SYBR	None	39.254	38.108	1.620								true	0.040	true	3	34	No Amp		0.000	Y	Y	N	Y	N
-14	B2	false	Sample 2	Ssid	UNKNOWN	SYBR	None	36.963	38.108	1.620								true	0.040	true	3	34	Amp		0.878	Y	N	N	Y	N
-15	B3	false	Sample 2	C	UNKNOWN	VIC	NFQ-MGB	37.325	37.375	0.071								true	0.040	true	3	34	Amp		0.768	Y	Y	N	N	N
-15	B3	false	Sample 2	D	UNKNOWN	FAM	NFQ-MGB	33.650	33.252	0.564								true	0.126	true	3	29	Amp		0.944	N	N	N	Y	N
-16	B4	false	Sample 2	C	UNKNOWN	VIC	NFQ-MGB	37.425	37.375	0.071								true	0.040	true	3	34	Inconclusive		0.774	Y	Y	N	N	N
-16	B4	false	Sample 2	D	UNKNOWN	FAM	NFQ-MGB	32.853	33.252	0.564								true	0.126	true	3	27	Amp		0.954	N	N	N	Y	N
-17	B5	false	Sample 10	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-18	B6	false	Sample 10	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-19	B7	false	Sample 10	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-19	B7	false	Sample 10	D	UNKNOWN	FAM	NFQ-MGB	Undetermined										true	0.126	true	3	39	No Amp		0.000	N	Y	Y	N	Y
-20	B8	false	Sample 10	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-20	B8	false	Sample 10	D	UNKNOWN	FAM	NFQ-MGB	Undetermined										true	0.126	true	3	39	No Amp		0.000	N	Y	Y	N	Y
-21	B9	false	Sample 18	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-22	B10	false	Sample 18	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-23	B11	false	Sample 18	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-23	B11	false	Sample 18	D	UNKNOWN	FAM	NFQ-MGB	31.694	31.830	0.191								true	0.126	true	3	27	Amp		0.955	N	N	N	N	N
-24	B12	false	Sample 18	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-24	B12	false	Sample 18	D	UNKNOWN	FAM	NFQ-MGB	31.965	31.830	0.191								true	0.126	true	3	28	Amp		0.956	N	N	N	N	N
-25	C1	false	Sample 3	Ssid	UNKNOWN	SYBR	None	32.761	32.704	0.081								true	0.040	true	3	29	Amp		0.956	Y	N	N	N	N
-26	C2	false	Sample 3	Ssid	UNKNOWN	SYBR	None	32.647	32.704	0.081								true	0.040	true	3	29	Amp		0.947	Y	N	N	N	N
-27	C3	false	Sample 3	C	UNKNOWN	VIC	NFQ-MGB	32.948	33.437	0.691								true	0.040	true	3	30	Amp		0.887	Y	N	N	Y	N
-27	C3	false	Sample 3	D	UNKNOWN	FAM	NFQ-MGB	35.148	35.389	0.341								true	0.126	true	3	30	Amp		0.907	N	N	N	N	N
-28	C4	false	Sample 3	C	UNKNOWN	VIC	NFQ-MGB	33.926	33.437	0.691								true	0.040	true	3	31	Amp		0.891	Y	N	N	Y	N
-28	C4	false	Sample 3	D	UNKNOWN	FAM	NFQ-MGB	35.630	35.389	0.341								true	0.126	true	3	31	Amp		0.911	N	N	N	N	N
-29	C5	false	Sample 11	Ssid	UNKNOWN	SYBR	None	36.088	36.112	0.035								true	0.040	true	3	32	Amp		0.731	Y	Y	N	N	N
-30	C6	false	Sample 11	Ssid	UNKNOWN	SYBR	None	36.137	36.112	0.035								true	0.040	true	3	31	Amp		0.866	Y	N	N	N	N
-31	C7	false	Sample 11	C	UNKNOWN	VIC	NFQ-MGB	31.352	31.329	0.032								true	0.040	true	3	28	Amp		0.899	Y	N	N	N	N
-31	C7	false	Sample 11	D	UNKNOWN	FAM	NFQ-MGB	33.926	34.133	0.292								true	0.126	true	3	29	Amp		0.932	N	N	N	N	N
-32	C8	false	Sample 11	C	UNKNOWN	VIC	NFQ-MGB	31.306	31.329	0.032								true	0.040	true	3	28	Amp		0.897	Y	N	N	N	N
-32	C8	false	Sample 11	D	UNKNOWN	FAM	NFQ-MGB	34.339	34.133	0.292								true	0.126	true	3	29	Amp		0.921	N	N	N	N	N
-33	C9	false	Sample 19	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-34	C10	false	Sample 19	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-35	C11	false	Sample 19	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-35	C11	false	Sample 19	D	UNKNOWN	FAM	NFQ-MGB	30.676	31.069	0.555								true	0.126	true	3	26	Amp		0.964	N	N	N	Y	N
-36	C12	false	Sample 19	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-36	C12	false	Sample 19	D	UNKNOWN	FAM	NFQ-MGB	31.462	31.069	0.555								true	0.126	true	3	26	Amp		0.956	N	N	N	Y	N
-37	D1	false	Sample 4	Ssid	UNKNOWN	SYBR	None	29.384	29.473	0.127								true	0.040	true	3	26	Amp		0.987	Y	N	N	N	N
-38	D2	false	Sample 4	Ssid	UNKNOWN	SYBR	None	29.563	29.473	0.127								true	0.040	true	3	26	Amp		0.972	Y	N	N	N	N
-39	D3	false	Sample 4	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-39	D3	false	Sample 4	D	UNKNOWN	FAM	NFQ-MGB	31.969	32.064	0.134								true	0.126	true	3	27	Amp		0.959	N	N	N	N	N
-40	D4	false	Sample 4	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-40	D4	false	Sample 4	D	UNKNOWN	FAM	NFQ-MGB	32.158	32.064	0.134								true	0.126	true	3	27	Amp		0.956	N	N	N	N	N
-41	D5	false	Sample 12	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-42	D6	false	Sample 12	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	N
-43	D7	false	Sample 12	C	UNKNOWN	VIC	NFQ-MGB	32.906	32.520	0.546								true	0.040	true	3	29	Amp		0.932	Y	N	N	Y	N
-43	D7	false	Sample 12	D	UNKNOWN	FAM	NFQ-MGB	33.685	33.329	0.504								true	0.126	true	3	28	Amp		0.950	N	N	N	Y	N
-44	D8	false	Sample 12	C	UNKNOWN	VIC	NFQ-MGB	32.134	32.520	0.546								true	0.040	true	3	29	Amp		0.903	Y	N	N	Y	N
-44	D8	false	Sample 12	D	UNKNOWN	FAM	NFQ-MGB	32.972	33.329	0.504								true	0.126	true	3	28	Amp		0.949	N	N	N	Y	N
-45	D9	false	Sample 20	Ssid	UNKNOWN	SYBR	None	31.247	30.836	0.581								true	0.040	true	3	28	Amp		0.953	Y	N	N	Y	N
-46	D10	false	Sample 20	Ssid	UNKNOWN	SYBR	None	30.425	30.836	0.581								true	0.040	true	3	27	Amp		0.970	Y	N	N	Y	N
-47	D11	false	Sample 20	C	UNKNOWN	VIC	NFQ-MGB	36.489	37.125	0.898								true	0.040	true	3	33	Amp		0.801	Y	N	N	Y	N
-47	D11	false	Sample 20	D	UNKNOWN	FAM	NFQ-MGB	32.178	32.199	0.030								true	0.126	true	3	27	Amp		0.955	N	N	N	N	N
-48	D12	false	Sample 20	C	UNKNOWN	VIC	NFQ-MGB	37.760	37.125	0.898								true	0.040	true	3	35	Inconclusive		0.763	Y	Y	N	Y	N
-48	D12	false	Sample 20	D	UNKNOWN	FAM	NFQ-MGB	32.220	32.199	0.030								true	0.126	true	3	27	Amp		0.959	N	N	N	N	N
-49	E1	false	Sample 5	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-50	E2	false	Sample 5	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-51	E3	false	Sample 5	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-51	E3	false	Sample 5	D	UNKNOWN	FAM	NFQ-MGB	30.037	29.930	0.152								true	0.126	true	3	26	Amp		0.962	N	N	N	N	N
-52	E4	false	Sample 5	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-52	E4	false	Sample 5	D	UNKNOWN	FAM	NFQ-MGB	29.822	29.930	0.152								true	0.126	true	3	25	Amp		0.967	N	N	N	N	N
-53	E5	false	Sample 13	Ssid	UNKNOWN	SYBR	None	28.116	28.246	0.184								true	0.040	true	3	25	Amp		0.901	Y	N	N	N	N
-54	E6	false	Sample 13	Ssid	UNKNOWN	SYBR	None	28.376	28.246	0.184								true	0.040	true	3	25	Amp		0.969	Y	N	N	N	N
-55	E7	false	Sample 13	C	UNKNOWN	VIC	NFQ-MGB	35.756	36.237	0.680								true	0.040	true	3	33	Amp		0.855	Y	N	N	Y	N
-55	E7	false	Sample 13	D	UNKNOWN	FAM	NFQ-MGB	31.902	31.911	0.013								true	0.126	true	3	27	Amp		0.959	N	N	N	N	N
-56	E8	false	Sample 13	C	UNKNOWN	VIC	NFQ-MGB	36.718	36.237	0.680								true	0.040	true	3	33	Amp		0.818	Y	N	N	Y	N
-56	E8	false	Sample 13	D	UNKNOWN	FAM	NFQ-MGB	31.920	31.911	0.013								true	0.126	true	3	27	Amp		0.961	N	N	N	N	N
-57	E9	false	Sample 21	Ssid	UNKNOWN	SYBR	None	24.652	24.500	0.216								true	0.040	true	3	22	Amp		0.853	Y	N	N	N	N
-58	E10	false	Sample 21	Ssid	UNKNOWN	SYBR	None	24.347	24.500	0.216								true	0.040	true	3	21	Amp		0.829	Y	N	N	N	N
-59	E11	false	Sample 21	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-59	E11	false	Sample 21	D	UNKNOWN	FAM	NFQ-MGB	33.977	33.871	0.150								true	0.126	true	3	30	Amp		0.949	N	N	N	N	N
-60	E12	false	Sample 21	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-60	E12	false	Sample 21	D	UNKNOWN	FAM	NFQ-MGB	33.765	33.871	0.150								true	0.126	true	3	29	Amp		0.957	N	N	N	N	N
-61	F1	false	Sample 6	Ssid	UNKNOWN	SYBR	None	26.746	26.163	0.825								true	0.040	true	3	24	Amp		0.934	Y	N	N	Y	N
-62	F2	false	Sample 6	Ssid	UNKNOWN	SYBR	None	25.580	26.163	0.825								true	0.040	true	3	22	Amp		0.847	Y	N	N	Y	N
-63	F3	false	Sample 6	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-63	F3	false	Sample 6	D	UNKNOWN	FAM	NFQ-MGB	33.334	33.548	0.304								true	0.126	true	3	29	Amp		0.957	N	N	N	N	N
-64	F4	false	Sample 6	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-64	F4	false	Sample 6	D	UNKNOWN	FAM	NFQ-MGB	33.763	33.548	0.304								true	0.126	true	3	29	Amp		0.954	N	N	N	N	N
-65	F5	false	Sample 14	Ssid	UNKNOWN	SYBR	None	21.523	21.464	0.084								true	0.040	true	3	19	Amp		0.937	Y	N	N	N	N
-66	F6	false	Sample 14	Ssid	UNKNOWN	SYBR	None	21.404	21.464	0.084								true	0.040	true	3	17	Amp		0.926	Y	N	N	N	N
-67	F7	false	Sample 14	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-67	F7	false	Sample 14	D	UNKNOWN	FAM	NFQ-MGB	29.178	29.181	0.004								true	0.126	true	3	24	Amp		0.964	N	N	N	N	N
-68	F8	false	Sample 14	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-68	F8	false	Sample 14	D	UNKNOWN	FAM	NFQ-MGB	29.184	29.181	0.004								true	0.126	true	3	24	Amp		0.972	N	N	N	N	N
-69	F9	false	Sample 22	Ssid	UNKNOWN	SYBR	None	37.754	37.754									true	0.040	true	3	33	No Amp		0.666	Y	Y	N	N	N
-70	F10	false	Sample 22	Ssid	UNKNOWN	SYBR	None	Undetermined	37.754									true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	N
-71	F11	false	Sample 22	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-71	F11	false	Sample 22	D	UNKNOWN	FAM	NFQ-MGB	29.472	29.676	0.288								true	0.126	true	3	24	Amp		0.973	N	N	N	N	N
-72	F12	false	Sample 22	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-72	F12	false	Sample 22	D	UNKNOWN	FAM	NFQ-MGB	29.880	29.676	0.288								true	0.126	true	3	24	Amp		0.971	N	N	N	N	N
-73	G1	false	Sample 7	Ssid	UNKNOWN	SYBR	None	23.918	24.321	0.571								true	0.040	true	3	19	Amp		0.813	Y	N	N	Y	N
-74	G2	false	Sample 7	Ssid	UNKNOWN	SYBR	None	24.725	24.321	0.571								true	0.040	true	3	22	Amp		0.925	Y	N	N	Y	N
-75	G3	false	Sample 7	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-75	G3	false	Sample 7	D	UNKNOWN	FAM	NFQ-MGB	29.944	30.019	0.106								true	0.126	true	3	25	Amp		0.968	N	N	N	N	N
-76	G4	false	Sample 7	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-76	G4	false	Sample 7	D	UNKNOWN	FAM	NFQ-MGB	30.094	30.019	0.106								true	0.126	true	3	25	Amp		0.972	N	N	N	N	N
-77	G5	false	Sample 15	Ssid	UNKNOWN	SYBR	None	27.985	27.807	0.252								true	0.040	true	3	24	Amp		0.985	Y	N	N	N	N
-78	G6	false	Sample 15	Ssid	UNKNOWN	SYBR	None	27.629	27.807	0.252								true	0.040	true	3	25	Amp		0.932	Y	N	N	N	N
-79	G7	false	Sample 15	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-79	G7	false	Sample 15	D	UNKNOWN	FAM	NFQ-MGB	31.366	31.156	0.297								true	0.126	true	3	26	Amp		0.962	N	N	N	N	N
-80	G8	false	Sample 15	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-80	G8	false	Sample 15	D	UNKNOWN	FAM	NFQ-MGB	30.946	31.156	0.297								true	0.126	true	3	25	Amp		0.970	N	N	N	N	N
-81	G9	false	Sample 23	Ssid	UNKNOWN	SYBR	None	21.502	21.537	0.050								true	0.040	true	3	19	Amp		0.936	Y	N	N	N	N
-82	G10	false	Sample 23	Ssid	UNKNOWN	SYBR	None	21.572	21.537	0.050								true	0.040	true	3	19	Amp		0.921	Y	N	N	N	N
-83	G11	false	Sample 23	C	UNKNOWN	VIC	NFQ-MGB	30.593	30.883	0.410								true	0.040	true	3	27	Amp		0.904	Y	N	N	N	N
-83	G11	false	Sample 23	D	UNKNOWN	FAM	NFQ-MGB	30.031	30.432	0.567								true	0.126	true	3	25	Amp		0.978	N	N	N	Y	N
-84	G12	false	Sample 23	C	UNKNOWN	VIC	NFQ-MGB	31.173	30.883	0.410								true	0.040	true	3	28	Amp		0.890	Y	N	N	N	N
-84	G12	false	Sample 23	D	UNKNOWN	FAM	NFQ-MGB	30.833	30.432	0.567								true	0.126	true	3	25	Amp		0.963	N	N	N	Y	N
-86	H2	false	Sample 8	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-87	H3	false	Sample 8	Ssid	UNKNOWN	SYBR	None	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-88	H4	false	Sample 8	C	UNKNOWN	VIC	NFQ-MGB	32.256	32.407	0.214								true	0.040	true	3	29	Amp		0.888	Y	N	N	N	N
-88	H4	false	Sample 8	D	UNKNOWN	FAM	NFQ-MGB	35.537	35.289	0.351								true	0.126	true	3	31	Amp		0.893	N	N	N	N	N
-89	H5	false	Sample 8	C	UNKNOWN	VIC	NFQ-MGB	32.558	32.407	0.214								true	0.040	true	3	29	Amp		0.875	Y	N	N	N	N
-89	H5	false	Sample 8	D	UNKNOWN	FAM	NFQ-MGB	35.041	35.289	0.351								true	0.126	true	3	30	Amp		0.904	N	N	N	N	N
-90	H6	false	Sample 16	Ssid	UNKNOWN	SYBR	None	27.954	27.547	0.577								true	0.040	true	3	24	Amp		0.977	Y	N	N	Y	N
-91	H7	false	Sample 16	Ssid	UNKNOWN	SYBR	None	27.139	27.547	0.577								true	0.040	true	3	24	Amp		0.876	Y	N	N	Y	N
-92	H8	false	Sample 16	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-92	H8	false	Sample 16	D	UNKNOWN	FAM	NFQ-MGB	32.461	32.081	0.537								true	0.126	true	3	27	Amp		0.955	N	N	N	Y	N
-93	H9	false	Sample 16	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	Inconclusive		0.000	Y	Y	Y	N	Y
-93	H9	false	Sample 16	D	UNKNOWN	FAM	NFQ-MGB	31.701	32.081	0.537								true	0.126	true	3	26	Amp		0.961	N	N	N	Y	N
-94	H10	false	Sample 17	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-94	H10	false	Sample 17	D	UNKNOWN	FAM	NFQ-MGB	Undetermined										true	0.126	true	3	39	No Amp		0.000	N	Y	Y	N	N
-95	H11	false	Sample 17	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										true	0.040	true	3	39	No Amp		0.000	Y	Y	Y	N	Y
-95	H11	false	Sample 17	D	UNKNOWN	FAM	NFQ-MGB	Undetermined										true	0.126	true	3	39	No Amp		0.000	N	Y	Y	N	Y
+Well	Well Position	Omit	Sample Name	Target Name	Task	Reporter	Quencher	CT	Ct Mean	Ct SD	Quantity	Quantity Mean	Quantity SD	Y-Intercept	R(superscript 2)	Slope	Efficiency	Automatic Ct Threshold	Ct Threshold	Automatic Baseline	Baseline Start	Baseline End	Amp Status	Comments	Cq Conf	CQCONF	EXPFAIL	HIGHSD	NOAMP
+2	A2	false	21-04A-T1	Ssid	UNKNOWN	SYBR	None	27.956	27.326	0.892								false	0.010	true	3	27	Amp		0.784	Y	N	Y	N
+3	A3	false	21-04A-T1	Ssid	UNKNOWN	SYBR	None	26.695	27.326	0.892								false	0.010	true	3	26	Amp		0.659	Y	N	Y	N
+4	A4	false	21-04A-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+4	A4	false	21-04A-T1	D	UNKNOWN	FAM	NFQ-MGB	27.468	27.473	0.007								false	0.010	true	3	26	Amp		0.485	Y	N	N	N
+5	A5	false	21-04A-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+5	A5	false	21-04A-T1	D	UNKNOWN	FAM	NFQ-MGB	27.478	27.473	0.007								false	0.010	true	3	26	Amp		0.457	Y	N	N	N
+6	A6	false	26-29A-T1	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+7	A7	false	26-29A-T1	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+8	A8	false	26-29A-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+8	A8	false	26-29A-T1	D	UNKNOWN	FAM	NFQ-MGB	31.478	31.141	0.477								false	0.010	true	3	30	Amp		0.934	N	N	N	N
+9	A9	false	26-29A-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+9	A9	false	26-29A-T1	D	UNKNOWN	FAM	NFQ-MGB	30.803	31.141	0.477								false	0.010	true	3	29	Amp		0.727	Y	N	N	N
+10	A10	false	NTC	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+11	A11	false	NTC	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+13	B1	false	25-30A-T1	Ssid	UNKNOWN	SYBR	None	34.736	34.362	0.528								false	0.010	true	3	34	No Amp		0.710	Y	N	Y	N
+14	B2	false	25-30A-T1	Ssid	UNKNOWN	SYBR	None	33.989	34.362	0.528								false	0.010	true	3	34	Amp		0.908	N	N	Y	N
+15	B3	false	25-30A-T1	C	UNKNOWN	VIC	NFQ-MGB	35.231	35.241	0.014								false	0.010	true	3	34	Amp		0.771	Y	N	N	N
+15	B3	false	25-30A-T1	D	UNKNOWN	FAM	NFQ-MGB	30.269	29.612	0.929								false	0.010	true	3	29	Amp		0.788	Y	N	Y	N
+16	B4	false	25-30A-T1	C	UNKNOWN	VIC	NFQ-MGB	35.250	35.241	0.014								false	0.010	true	3	34	Inconclusive		0.784	Y	N	N	N
+16	B4	false	25-30A-T1	D	UNKNOWN	FAM	NFQ-MGB	28.955	29.612	0.929								false	0.010	true	3	27	Amp		0.540	Y	N	Y	N
+17	B5	false	26-20A-T1	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+18	B6	false	26-20A-T1	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+19	B7	false	26-20A-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+19	B7	false	26-20A-T1	D	UNKNOWN	FAM	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+20	B8	false	26-20A-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+20	B8	false	26-20A-T1	D	UNKNOWN	FAM	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+21	B9	false	21-01A-T1	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+22	B10	false	21-01A-T1	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+23	B11	false	21-01A-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+23	B11	false	21-01A-T1	D	UNKNOWN	FAM	NFQ-MGB	28.368	28.032	0.475								false	0.010	true	3	27	Amp		0.580	Y	N	N	N
+24	B12	false	21-01A-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+24	B12	false	21-01A-T1	D	UNKNOWN	FAM	NFQ-MGB	27.696	28.032	0.475								false	0.010	true	3	28	Amp		0.374	Y	N	N	N
+25	C1	false	25-12B-T1	Ssid	UNKNOWN	SYBR	None	29.785	29.960	0.247								false	0.010	true	3	29	Amp		0.828	N	N	N	N
+26	C2	false	25-12B-T1	Ssid	UNKNOWN	SYBR	None	30.135	29.960	0.247								false	0.010	true	3	29	Amp		0.950	N	N	N	N
+27	C3	false	25-12B-T1	C	UNKNOWN	VIC	NFQ-MGB	30.919	31.408	0.691								false	0.010	true	3	30	Amp		0.887	N	N	Y	N
+27	C3	false	25-12B-T1	D	UNKNOWN	FAM	NFQ-MGB	31.579	31.824	0.348								false	0.010	true	3	30	Amp		0.908	N	N	N	N
+28	C4	false	25-12B-T1	C	UNKNOWN	VIC	NFQ-MGB	31.896	31.408	0.691								false	0.010	true	3	31	Amp		0.895	N	N	Y	N
+28	C4	false	25-12B-T1	D	UNKNOWN	FAM	NFQ-MGB	32.070	31.824	0.348								false	0.010	true	3	31	Amp		0.912	N	N	N	N
+29	C5	false	25-15A-T1	Ssid	UNKNOWN	SYBR	None	33.647	32.946	0.991								false	0.010	true	3	32	Amp		0.727	Y	N	Y	N
+30	C6	false	25-15A-T1	Ssid	UNKNOWN	SYBR	None	32.245	32.946	0.991								false	0.010	true	3	31	Amp		0.917	N	N	Y	N
+31	C7	false	25-15A-T1	C	UNKNOWN	VIC	NFQ-MGB	29.375	29.353	0.031								false	0.010	true	3	28	Amp		0.900	N	N	N	N
+31	C7	false	25-15A-T1	D	UNKNOWN	FAM	NFQ-MGB	30.321	30.469	0.210								false	0.010	true	3	29	Amp		0.760	Y	N	N	N
+32	C8	false	25-15A-T1	C	UNKNOWN	VIC	NFQ-MGB	29.331	29.353	0.031								false	0.010	true	3	28	Amp		0.901	N	N	N	N
+32	C8	false	25-15A-T1	D	UNKNOWN	FAM	NFQ-MGB	30.618	30.469	0.210								false	0.010	true	3	29	Amp		0.785	Y	N	N	N
+33	C9	false	21-01B-T1	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+34	C10	false	21-01B-T1	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+35	C11	false	21-01B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+35	C11	false	21-01B-T1	D	UNKNOWN	FAM	NFQ-MGB	27.158	27.449	0.411								false	0.010	true	3	26	Amp		0.476	Y	N	N	N
+36	C12	false	21-01B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+36	C12	false	21-01B-T1	D	UNKNOWN	FAM	NFQ-MGB	27.739	27.449	0.411								false	0.010	true	3	26	Amp		0.480	Y	N	N	N
+37	D1	false	26-23A-T1	Ssid	UNKNOWN	SYBR	None	27.441	27.545	0.148								false	0.010	true	3	26	Amp		0.835	N	N	N	N
+38	D2	false	26-23A-T1	Ssid	UNKNOWN	SYBR	None	27.650	27.545	0.148								false	0.010	true	3	26	Amp		0.817	N	N	N	N
+39	D3	false	26-23A-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+39	D3	false	26-23A-T1	D	UNKNOWN	FAM	NFQ-MGB	28.591	28.442	0.211								false	0.010	true	3	27	Amp		0.582	Y	N	N	N
+40	D4	false	26-23A-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+40	D4	false	26-23A-T1	D	UNKNOWN	FAM	NFQ-MGB	28.293	28.442	0.211								false	0.010	true	3	27	Amp		0.477	Y	N	N	N
+41	D5	false	25-10B-T1	Ssid	UNKNOWN	SYBR	None	Undetermined	38.428									false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+42	D6	false	25-10B-T1	Ssid	UNKNOWN	SYBR	None	38.428	38.428									false	0.010	true	3	39	No Amp		0.361	Y	Y	N	N
+43	D7	false	25-10B-T1	C	UNKNOWN	VIC	NFQ-MGB	30.785	30.413	0.525								false	0.010	true	3	29	Amp		0.934	N	N	Y	N
+43	D7	false	25-10B-T1	D	UNKNOWN	FAM	NFQ-MGB	29.681	29.477	0.289								false	0.010	true	3	28	Amp		0.629	Y	N	N	N
+44	D8	false	25-10B-T1	C	UNKNOWN	VIC	NFQ-MGB	30.042	30.413	0.525								false	0.010	true	3	29	Amp		0.908	N	N	Y	N
+44	D8	false	25-10B-T1	D	UNKNOWN	FAM	NFQ-MGB	29.273	29.477	0.289								false	0.010	true	3	28	Amp		0.629	Y	N	N	N
+45	D9	false	25-02A-T1	Ssid	UNKNOWN	SYBR	None	28.873	28.382	0.695								false	0.010	true	3	28	Amp		0.837	N	N	Y	N
+46	D10	false	25-02A-T1	Ssid	UNKNOWN	SYBR	None	27.891	28.382	0.695								false	0.010	true	3	27	Amp		0.698	Y	N	Y	N
+47	D11	false	25-02A-T1	C	UNKNOWN	VIC	NFQ-MGB	34.642	35.228	0.830								false	0.010	true	3	33	Amp		0.802	N	N	Y	N
+47	D11	false	25-02A-T1	D	UNKNOWN	FAM	NFQ-MGB	28.672	28.536	0.192								false	0.010	true	3	27	Amp		0.605	Y	N	N	N
+48	D12	false	25-02A-T1	C	UNKNOWN	VIC	NFQ-MGB	35.815	35.228	0.830								false	0.010	true	3	35	Inconclusive		0.765	Y	N	Y	N
+48	D12	false	25-02A-T1	D	UNKNOWN	FAM	NFQ-MGB	28.400	28.536	0.192								false	0.010	true	3	27	Amp		0.500	Y	N	N	N
+49	E1	false	26-01B-T1	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+50	E2	false	26-01B-T1	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+51	E3	false	26-01B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+51	E3	false	26-01B-T1	D	UNKNOWN	FAM	NFQ-MGB	26.803	26.595	0.293								false	0.010	true	3	26	Amp		0.550	Y	N	N	N
+52	E4	false	26-01B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+52	E4	false	26-01B-T1	D	UNKNOWN	FAM	NFQ-MGB	26.388	26.595	0.293								false	0.010	true	3	25	Amp		0.480	Y	N	N	N
+53	E5	false	25-16B-T1	Ssid	UNKNOWN	SYBR	None	26.171	26.220	0.070								false	0.010	true	3	25	Amp		0.662	Y	N	N	N
+54	E6	false	25-16B-T1	Ssid	UNKNOWN	SYBR	None	26.270	26.220	0.070								false	0.010	true	3	25	Amp		0.702	Y	N	N	N
+55	E7	false	25-16B-T1	C	UNKNOWN	VIC	NFQ-MGB	33.811	34.240	0.605								false	0.010	true	3	33	Amp		0.859	N	N	Y	N
+55	E7	false	25-16B-T1	D	UNKNOWN	FAM	NFQ-MGB	28.235	28.341	0.150								false	0.010	true	3	27	Amp		0.561	Y	N	N	N
+56	E8	false	25-16B-T1	C	UNKNOWN	VIC	NFQ-MGB	34.668	34.240	0.605								false	0.010	true	3	33	Amp		0.821	N	N	Y	N
+56	E8	false	25-16B-T1	D	UNKNOWN	FAM	NFQ-MGB	28.447	28.341	0.150								false	0.010	true	3	27	Amp		0.610	Y	N	N	N
+57	E9	false	21-02B-T1	Ssid	UNKNOWN	SYBR	None	22.652	22.300	0.498								false	0.010	true	3	22	Amp		0.550	Y	N	N	N
+58	E10	false	21-02B-T1	Ssid	UNKNOWN	SYBR	None	21.947	22.300	0.498								false	0.010	true	3	21	Amp		0.423	Y	N	N	N
+59	E11	false	21-02B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+59	E11	false	21-02B-T1	D	UNKNOWN	FAM	NFQ-MGB	30.604	30.360	0.346								false	0.010	true	3	30	Amp		0.803	N	N	N	N
+60	E12	false	21-02B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+60	E12	false	21-02B-T1	D	UNKNOWN	FAM	NFQ-MGB	30.115	30.360	0.346								false	0.010	true	3	29	Amp		0.644	Y	N	N	N
+61	F1	false	21-03B-T1	Ssid	UNKNOWN	SYBR	None	24.405	23.668	1.041								false	0.010	true	3	24	Amp		0.542	Y	N	Y	N
+62	F2	false	21-03B-T1	Ssid	UNKNOWN	SYBR	None	22.932	23.668	1.041								false	0.010	true	3	22	Amp		0.414	Y	N	Y	N
+63	F3	false	21-03B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+63	F3	false	21-03B-T1	D	UNKNOWN	FAM	NFQ-MGB	29.868	29.982	0.162								false	0.010	true	3	29	Amp		0.672	Y	N	N	N
+64	F4	false	21-03B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+64	F4	false	21-03B-T1	D	UNKNOWN	FAM	NFQ-MGB	30.096	29.982	0.162								false	0.010	true	3	29	Amp		0.642	Y	N	N	N
+65	F5	false	26-29B-T1	Ssid	UNKNOWN	SYBR	None	19.776	19.404	0.526								false	0.010	true	3	19	Amp		0.522	Y	N	Y	N
+66	F6	false	26-29B-T1	Ssid	UNKNOWN	SYBR	None	19.033	19.404	0.526								false	0.010	true	3	17	Amp		0.350	Y	N	Y	N
+67	F7	false	26-29B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+67	F7	false	26-29B-T1	D	UNKNOWN	FAM	NFQ-MGB	25.837	25.780	0.080								false	0.010	true	3	24	Amp		0.474	Y	N	N	N
+68	F8	false	26-29B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+68	F8	false	26-29B-T1	D	UNKNOWN	FAM	NFQ-MGB	25.723	25.780	0.080								false	0.010	true	3	24	Amp		0.445	Y	N	N	N
+69	F9	false	26-21B-T1	Ssid	UNKNOWN	SYBR	None	33.653	36.151	3.532								false	0.010	true	3	33	No Amp		0.757	Y	N	Y	N
+70	F10	false	26-21B-T1	Ssid	UNKNOWN	SYBR	None	38.648	36.151	3.532								false	0.010	true	3	39	No Amp		0.152	Y	Y	Y	N
+71	F11	false	26-21B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+71	F11	false	26-21B-T1	D	UNKNOWN	FAM	NFQ-MGB	25.782	25.977	0.276								false	0.010	true	3	24	Amp		0.396	Y	N	N	N
+72	F12	false	26-21B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+72	F12	false	26-21B-T1	D	UNKNOWN	FAM	NFQ-MGB	26.172	25.977	0.276								false	0.010	true	3	24	Amp		0.397	Y	N	N	N
+73	G1	false	21-23A-T1	Ssid	UNKNOWN	SYBR	None	21.377	21.943	0.800								false	0.010	true	3	19	Amp		0.279	Y	N	Y	N
+74	G2	false	21-23A-T1	Ssid	UNKNOWN	SYBR	None	22.508	21.943	0.800								false	0.010	true	3	22	Amp		0.471	Y	N	Y	N
+75	G3	false	21-23A-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+75	G3	false	21-23A-T1	D	UNKNOWN	FAM	NFQ-MGB	26.144	26.381	0.336								false	0.010	true	3	25	Amp		0.365	Y	N	N	N
+76	G4	false	21-23A-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+76	G4	false	21-23A-T1	D	UNKNOWN	FAM	NFQ-MGB	26.619	26.381	0.336								false	0.010	true	3	25	Amp		0.462	Y	N	N	N
+77	G5	false	26-28B-T1	Ssid	UNKNOWN	SYBR	None	25.523	25.580	0.081								false	0.010	true	3	24	Amp		0.594	Y	N	N	N
+78	G6	false	26-28B-T1	Ssid	UNKNOWN	SYBR	None	25.637	25.580	0.081								false	0.010	true	3	25	Amp		0.680	Y	N	N	N
+79	G7	false	26-28B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+79	G7	false	26-28B-T1	D	UNKNOWN	FAM	NFQ-MGB	27.840	27.438	0.569								false	0.010	true	3	26	Amp		0.522	Y	N	Y	N
+80	G8	false	26-28B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+80	G8	false	26-28B-T1	D	UNKNOWN	FAM	NFQ-MGB	27.035	27.438	0.569								false	0.010	true	3	25	Amp		0.400	Y	N	Y	N
+81	G9	false	+(25-16A-T0)	Ssid	UNKNOWN	SYBR	None	19.986	20.073	0.123								false	0.010	true	3	19	Amp		0.589	Y	N	N	N
+82	G10	false	+(25-16A-T0)	Ssid	UNKNOWN	SYBR	None	20.160	20.073	0.123								false	0.010	true	3	19	Amp		0.601	Y	N	N	N
+83	G11	false	+(25-16A-T0)	C	UNKNOWN	VIC	NFQ-MGB	28.548	28.762	0.303								false	0.010	true	3	27	Amp		0.906	N	N	N	N
+83	G11	false	+(25-16A-T0)	D	UNKNOWN	FAM	NFQ-MGB	26.346	26.486	0.199								false	0.010	true	3	25	Amp		0.472	Y	N	N	N
+84	G12	false	+(25-16A-T0)	C	UNKNOWN	VIC	NFQ-MGB	28.976	28.762	0.303								false	0.010	true	3	28	Amp		0.897	N	N	N	N
+84	G12	false	+(25-16A-T0)	D	UNKNOWN	FAM	NFQ-MGB	26.627	26.486	0.199								false	0.010	true	3	25	Amp		0.377	Y	N	N	N
+86	H2	false	25-01A-T1	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+87	H3	false	25-01A-T1	Ssid	UNKNOWN	SYBR	None	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+88	H4	false	25-01A-T1	C	UNKNOWN	VIC	NFQ-MGB	30.190	30.310	0.170								false	0.010	true	3	29	Amp		0.890	N	N	N	N
+88	H4	false	25-01A-T1	D	UNKNOWN	FAM	NFQ-MGB	31.136	31.238	0.143								false	0.010	true	3	31	Amp		0.745	Y	N	N	N
+89	H5	false	25-01A-T1	C	UNKNOWN	VIC	NFQ-MGB	30.430	30.310	0.170								false	0.010	true	3	29	Amp		0.875	N	N	N	N
+89	H5	false	25-01A-T1	D	UNKNOWN	FAM	NFQ-MGB	31.339	31.238	0.143								false	0.010	true	3	30	Amp		0.908	N	N	N	N
+90	H6	false	21-09B-T1	Ssid	UNKNOWN	SYBR	None	25.452	25.231	0.312								false	0.010	true	3	24	Amp		0.615	Y	N	N	N
+91	H7	false	21-09B-T1	Ssid	UNKNOWN	SYBR	None	25.010	25.231	0.312								false	0.010	true	3	24	Amp		0.555	Y	N	N	N
+92	H8	false	21-09B-T1	C	UNKNOWN	VIC	NFQ-MGB	Undetermined	39.856									false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+92	H8	false	21-09B-T1	D	UNKNOWN	FAM	NFQ-MGB	28.787	28.287	0.707								false	0.010	true	3	27	Amp		0.539	Y	N	Y	N
+93	H9	false	21-09B-T1	C	UNKNOWN	VIC	NFQ-MGB	39.856	39.856									false	0.010	true	3	39	Inconclusive		0.000	Y	Y	N	Y
+93	H9	false	21-09B-T1	D	UNKNOWN	FAM	NFQ-MGB	27.787	28.287	0.707								false	0.010	true	3	26	Amp		0.431	Y	N	Y	N
+94	H10	false	NTC	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+94	H10	false	NTC	D	UNKNOWN	FAM	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	N
+95	H11	false	NTC	C	UNKNOWN	VIC	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y
+95	H11	false	NTC	D	UNKNOWN	FAM	NFQ-MGB	Undetermined										false	0.010	true	3	39	No Amp		0.000	Y	Y	N	Y

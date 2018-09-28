@@ -12,7 +12,7 @@ knitr::opts_knit$set(root.dir = normalizePath(".."))
 This will load the R package devtools (installation script commented in), as well as the code for the qPCR plates
 ```{r libraries}
 library(devtools)  # install.packages("devtools")
-devtools::install_github("jrcunning/steponeR")
+#devtools::install_github("jrcunning/steponeR")
 library(steponeR)
 ```
 
@@ -25,7 +25,7 @@ plates
 df <- steponeR(files = plates, 
          delim = "\t", 
          target.ratios = c("C.Ssid", "D.Ssid"), 
-         fluor.norm = list(C = 0, D = 0, Ssid = 0),
+         fluor.norm = list(C = 2.5, D = 0, Ssid = 2.5),
          copy.number = list(C = 20, D = 1, Ssid = 1),
          ploidy = list(C=1, D=1, Ssid=2),
          extract = list(C=0.813, D=0.813, Ssid=0.982))
