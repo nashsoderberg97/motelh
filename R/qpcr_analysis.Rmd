@@ -37,6 +37,8 @@ df <- steponeR(files = plates,
          extract = list(C=0.813, D=0.813, Ssid=0.982))
 qpcr <- df$result
 
+
+
 qpcr <- filter(qpcr, nchar(Sample.Name) == 8 | nchar(Sample.Name) == 9) #filters out the NTC and positive controls
 
 
@@ -48,7 +50,7 @@ qpcr <- unite(qpcr, Sample.Name, 1:2, sep = "-")
 fulltable <- full_join(qpcr, df1)
 
 
-fulltable1 <- fulltable %>%
+fulltable <- fulltable %>%
   mutate(date = case_when(timepoint == "T0" ~ as.Date("2018-01-31"),
                           timepoint == "T1" ~ as.Date("2018-02-12"),
                           timepoint == "T2" ~ as.Date("2018-03-26"),
@@ -59,12 +61,24 @@ fulltable1 <- fulltable %>%
          C.Ssid1 = case_when(is.na(C.Ssid) == TRUE ~ 0,
                              TRUE ~ C.Ssid))
 
+redos <- filter(fulltable1, totalSH > 0.5) #samples that need to be done due to high S/H cell ratios
 
 
 
 #aesthetics - details of plot
 ggplot(fulltable1, aes(x = date, y = log10(C.Ssid))) +
   geom_point()
+
+#Plots of standard devs between technical replicates
+ggplot(qpcr, aes(x = C.CT.sd)) +
+  geom_histogram(breaks = seq(0,3,by=.1))
+
+ggplot(qpcr, aes(x = D.CT.sd)) +
+  geom_histogram(breaks = seq(0,3,by=.1))
+
+ggplot(qpcr, aes(x = Ssid.CT.sd)) +
+  geom_histogram(breaks = seq(0,3,by=.1))
+
 ```
 *NOTE*: The object "plates" is a list of all of the .txt files in the data/qpcr folder
 
