@@ -14,6 +14,7 @@ This will load the R package devtools (installation script commented in), as wel
 library(devtools)  # install.packages("devtools")
 #devtools::install_github("jrcunning/steponeR")
 library(steponeR)
+library(tidyverse)
 ```
 
 ##Loading qPCR Data from a Text File
@@ -21,6 +22,11 @@ This will load a .txt file and read the data in it to calculate symbiont/host ce
 ```{r load_data}
 plates <- list.files(path = "data/qpcr", pattern = ".txt", full.names = TRUE)
 plates
+
+metadata <- list.files(path = "data/other", pattern = ".csv", full.names = TRUE)
+metadata
+
+df1 <- read.table(file = "data/other/coral_history.csv", fill = TRUE, nrows = 126, header = T, sep = ",") #creates a dataframe of the coral metadata from a csv file
 
 df <- steponeR(files = plates, 
          delim = "\t", 
@@ -31,7 +37,34 @@ df <- steponeR(files = plates,
          extract = list(C=0.813, D=0.813, Ssid=0.982))
 qpcr <- df$result
 
-qpcr
+qpcr <- filter(qpcr, nchar(Sample.Name) == 8 | nchar(Sample.Name) == 9) #filters out the NTC and positive controls
+
+
+qpcr <- separate(qpcr, Sample.Name, c("genotype", "individual", "timepoint"), sep = "-")
+
+qpcr <- unite(qpcr, Sample.Name, 1:2, sep = "-")
+
+
+fulltable <- full_join(qpcr, df1)
+
+
+fulltable1 <- fulltable %>%
+  mutate(date = case_when(timepoint == "T0" ~ as.Date("2018-01-31"),
+                          timepoint == "T1" ~ as.Date("2018-02-12"),
+                          timepoint == "T2" ~ as.Date("2018-03-26"),
+                          timepoint == "T3" ~ as.Date("2018-05-23"),
+                          timepoint == "T4" ~ as.Date("2018-05-30")),
+         totalSH = C.Ssid + D.Ssid,
+         propD = D.Ssid / totalSH,
+         C.Ssid1 = case_when(is.na(C.Ssid) == TRUE ~ 0,
+                             TRUE ~ C.Ssid))
+
+
+
+
+#aesthetics - details of plot
+ggplot(fulltable1, aes(x = date, y = log10(C.Ssid))) +
+  geom_point()
 ```
 *NOTE*: The object "plates" is a list of all of the .txt files in the data/qpcr folder
 
