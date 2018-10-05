@@ -56,10 +56,12 @@ fulltable <- fulltable %>%
                           timepoint == "T2" ~ as.Date("2018-03-26"),
                           timepoint == "T3" ~ as.Date("2018-05-23"),
                           timepoint == "T4" ~ as.Date("2018-05-30")),
-         totalSH = C.Ssid + D.Ssid,
-         propD = D.Ssid / totalSH,
          C.Ssid1 = case_when(is.na(C.Ssid) == TRUE ~ 0,
-                             TRUE ~ C.Ssid))
+                             TRUE ~ C.Ssid),
+         D.Ssid1 = case_when(is.na(D.Ssid) == TRUE ~ 0,
+                             TRUE ~ D.Ssid),
+         totalSH = C.Ssid1 + D.Ssid1,
+         propD = D.Ssid1 / totalSH,)
 
 redos <- filter(fulltable1, totalSH > 0.5) #samples that need to be done due to high S/H cell ratios
 
@@ -79,8 +81,23 @@ ggplot(qpcr, aes(x = D.CT.sd)) +
 ggplot(qpcr, aes(x = Ssid.CT.sd)) +
   geom_histogram(breaks = seq(0,3,by=.1))
 
+#boxplot to display different genotypes' SH ratios at different time points
+
+#first I need a table with just Ssid in it
+Ssid <- filter(fulltable, Geno == 21 | Geno == 25 | Geno == 26)
+Ssid <- filter(Ssid, totalSH > 0)
+Ssid$Geno <- as.factor(Ssid$Geno) #allows the genotypes to be treated as discrete instead of continuous
+
+Ssid_SH_plot <- ggplot(Ssid, aes(group = Geno, x = Geno, y = totalSH)) +
+  geom_boxplot() +
+  ylim(0, .2) +
+  
+  ggtitle("Symbiont to Host Cell Ratios of S. siderea") +
+  xlab("Genotype") + ylab("Symbiont/Host Cell Ratio") +
+  facet_wrap(vars(timepoint))
+  
+Ssid_SH_plot
 ```
 *NOTE*: The object "plates" is a list of all of the .txt files in the data/qpcr folder
-
 
 
