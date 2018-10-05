@@ -87,10 +87,10 @@ ggplot(qpcr, aes(x = Ssid.CT.sd)) +
 Ssid <- filter(fulltable, Geno == 21 | Geno == 25 | Geno == 26)
 Ssid <- filter(Ssid, totalSH > 0)
 Ssid$Geno <- as.factor(Ssid$Geno) #allows the genotypes to be treated as discrete instead of continuous
+Ssid$totalSH_log <- log10(Ssid$totalSH)
 
-Ssid_SH_plot <- ggplot(Ssid, aes(group = Geno, x = Geno, y = totalSH)) +
+Ssid_SH_plot <- ggplot(Ssid, aes(group = Geno, x = Geno, y = log10(totalSH))) +
   geom_boxplot() +
-  ylim(0, .2) +
   ggtitle("Symbiont to Host Cell Ratios of S. siderea") +
   xlab("Genotype") + ylab("Symbiont/Host Cell Ratio") +
   facet_wrap(vars(timepoint))
