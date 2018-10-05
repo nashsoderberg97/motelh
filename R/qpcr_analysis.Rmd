@@ -91,7 +91,6 @@ Ssid$Geno <- as.factor(Ssid$Geno) #allows the genotypes to be treated as discret
 Ssid_SH_plot <- ggplot(Ssid, aes(group = Geno, x = Geno, y = totalSH)) +
   geom_boxplot() +
   ylim(0, .2) +
-  
   ggtitle("Symbiont to Host Cell Ratios of S. siderea") +
   xlab("Genotype") + ylab("Symbiont/Host Cell Ratio") +
   facet_wrap(vars(timepoint))
