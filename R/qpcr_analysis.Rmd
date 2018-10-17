@@ -96,6 +96,52 @@ Ssid_SH_plot <- ggplot(Ssid, aes(group = Geno, x = Geno, y = log10(totalSH))) +
   facet_wrap(vars(timepoint))
   
 Ssid_SH_plot
+
+#Next step to plot C - D ratios pre and post recovery, one of Ross's past papers used innitial proportion clade D on x axis and recovered proportion clade D on the y axis, I think I need to separate fulltable into separate timepoint dataframes. In hindsight it would have been WAY easier to split the dataframe AFTER all the other stuff, but live and learn
+
+t0 <- filter(fulltable, grepl("T0", timepoint))
+t1 <- filter(fulltable, grepl("T1", timepoint))
+t2 <- filter(fulltable, grepl("T2", timepoint))
+t3 <- filter(fulltable, grepl("T3", timepoint))
+
+
+#Filter out any NaN values
+t0 <- filter(t0, propD > 0 & propD < 1.1)
+t1 <- filter(t1, propD > 0 & propD < 1.1)
+t2 <- filter(t2, propD > 0 & propD < 1.1)
+t3 <- filter(t3, propD > 0 & propD < 1.1)
+
+#Also need to rename the column names so the propD is identifiable to sprecific timepoints
+colnames(t0)[colnames(t0) == "propD"] <- "propD.t0"
+colnames(t1)[colnames(t1) == "propD"] <- "propD.t1"
+colnames(t2)[colnames(t2) == "propD"] <- "propD.t2"
+colnames(t3)[colnames(t3) == "propD"] <- "propD.t3"
+
+#creating a table that has only the info needed for graphing and columns that are unique except for sample name so when I join them all the sample info for a certain coral ID will be on the same row
+T0 <- t0[c(1,22)]
+T1 <- t1[c(1,22)]
+T2 <- t2[c(1,22)]
+T3 <- t3[c(1,22)]
+
+#time to join the timepoints into one table
+propD_df <- full_join(T0, T1)
+propD_df <- full_join(propD_df, T2)
+propD_df <- full_join(propD_df, T3)
+
+#Now that the proportion of D of the symbionts at each timepoint is on the same row of a dataframe, I can use that dataframe to look at any two timepoints I need to
+
+propD_t0t1 <- ggplot(propD_df, aes(x = propD.t0, y = propD.t2)) + 
+  geom_point() +
+  ggtitle("S. siderea Proportion of Clade D Before and After First Stress") +
+  xlab("Initial Proportion of Clade D") + ylab("Post-Stress Proportion of Clade D") +
+  #xlim(0,1) +
+  #ylim(0,1) +
+  geom_abline(intercept = 0, slope = 1)
+  
+
+ 
+
+propD_t0t1
 ```
 *NOTE*: The object "plates" is a list of all of the .txt files in the data/qpcr folder
 
