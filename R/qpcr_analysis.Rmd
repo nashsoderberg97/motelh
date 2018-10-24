@@ -118,10 +118,10 @@ colnames(t2)[colnames(t2) == "propD"] <- "propD.t2"
 colnames(t3)[colnames(t3) == "propD"] <- "propD.t3"
 
 #creating a table that has only the info needed for graphing and columns that are unique except for sample name so when I join them all the sample info for a certain coral ID will be on the same row
-T0 <- t0[c(1,22)]
-T1 <- t1[c(1,22)]
-T2 <- t2[c(1,22)]
-T3 <- t3[c(1,22)]
+T0 <- t0[c(1,24)]
+T1 <- t1[c(1,24)]
+T2 <- t2[c(1,24)]
+T3 <- t3[c(1,24)]
 
 #time to join the timepoints into one table
 propD_df <- full_join(T0, T1)
@@ -130,7 +130,7 @@ propD_df <- full_join(propD_df, T3)
 
 #Now that the proportion of D of the symbionts at each timepoint is on the same row of a dataframe, I can use that dataframe to look at any two timepoints I need to
 
-propD_t0t1 <- ggplot(propD_df, aes(x = propD.t0, y = propD.t2)) + 
+propD_t0t2 <- ggplot(propD_df, aes(x = propD.t0, y = propD.t2)) + 
   geom_point() +
   ggtitle("S. siderea Proportion of Clade D Before and After First Stress") +
   xlab("Initial Proportion of Clade D") + ylab("Post-Stress Proportion of Clade D") +
@@ -138,10 +138,60 @@ propD_t0t1 <- ggplot(propD_df, aes(x = propD.t0, y = propD.t2)) +
   #ylim(0,1) +
   geom_abline(intercept = 0, slope = 1)
   
+propD_t0t2
 
- 
+#Looking to see if there's any correlation between treatment and which way the coral shuffled, towards D or C
 
-propD_t0t1
+HT_df <- filter(fulltable, Treatment.1 == "HT")
+HL_df <- filter(fulltable, Treatment.1 == "HL")
+C_df <- filter(fulltable, Treatment.1 == "C")
+
+#Now just plotted the same way as before
+
+#Next step to plot C - D ratios pre and post recovery, one of Ross's past papers used innitial proportion clade D on x axis and recovered proportion clade D on the y axis, I think I need to separate fulltable into separate timepoint dataframes. In hindsight it would have been WAY easier to split the dataframe AFTER all the other stuff, but live and learn
+
+t0_HT <- filter(HT_df, grepl("T0", timepoint))
+t1_HT <- filter(HT_df, grepl("T1", timepoint))
+t2_HT <- filter(HT_df, grepl("T2", timepoint))
+t3_HT <- filter(HT_df, grepl("T3", timepoint))
+
+
+#Filter out any NaN values
+t0_HT <- filter(t0_HT, propD > 0 & propD < 1.1)
+t1_HT <- filter(t1_HT, propD > 0 & propD < 1.1)
+t2_HT <- filter(t2_HT, propD > 0 & propD < 1.1)
+t3_HT <- filter(t3_HT, propD > 0 & propD < 1.1)
+
+#Also need to rename the column names so the propD is identifiable to sprecific timepoints
+colnames(t0_HT)[colnames(t0_HT) == "propD"] <- "propD.t0_HT"
+colnames(t1_HT)[colnames(t1_HT) == "propD"] <- "propD.t1_HT"
+colnames(t2_HT)[colnames(t2_HT) == "propD"] <- "propD.t2_HT"
+colnames(t3_HT)[colnames(t3_HT) == "propD"] <- "propD.t3_HT"
+
+#creating a table that has only the info needed for graphing and columns that are unique except for sample name so when I join them all the sample info for a certain coral ID will be on the same row
+T0_HT <- t0_HT[c(1,24)]
+T1_HT <- t1_HT[c(1,24)]
+T2_HT <- t2_HT[c(1,24)]
+T3_HT <- t3_HT[c(1,24)]
+
+#time to join the timepoints into one table
+propD_HT <- full_join(T0_HT, T1_HT)
+propD_HT <- full_join(propD_HT, T2_HT)
+propD_HT <- full_join(propD_HT, T3_HT)
+
+#Now that the proportion of D of the symbionts at each timepoint is on the same row of a dataframe, I can use that dataframe to look at any two timepoints I need to
+
+propD_t0t2_HT <- ggplot(propD_HT, aes(x = propD.t0_HT, y = propD.t2_HT)) + 
+  geom_point() +
+  ggtitle("S. siderea Proportion of Clade D Before and After Heat Stress") +
+  xlab("Initial Proportion of Clade D") + ylab("Post-Stress Proportion of Clade D") +
+  #xlim(0,1) +
+  #ylim(0,1) +
+  geom_abline(intercept = 0, slope = 1)
+
+propD_t0t2_HT
+
+
 ```
 *NOTE*: The object "plates" is a list of all of the .txt files in the data/qpcr folder
 
