@@ -84,6 +84,7 @@ ggplot(qpcr, aes(x = Ssid.CT.sd)) +
 #boxplot to display different genotypes' SH ratios at different time points
 
 #first I need a table with just Ssid in it
+
 Ssid <- filter(fulltable, Geno == 21 | Geno == 25 | Geno == 26)
 Ssid <- filter(Ssid, totalSH > 0)
 Ssid$Geno <- as.factor(Ssid$Geno) #allows the genotypes to be treated as discrete instead of continuous
@@ -104,26 +105,29 @@ t1 <- filter(fulltable, grepl("T1", timepoint))
 t2 <- filter(fulltable, grepl("T2", timepoint))
 t3 <- filter(fulltable, grepl("T3", timepoint))
 
-
 #Filter out any NaN values
+
 t0 <- filter(t0, propD > 0 & propD < 1.1)
 t1 <- filter(t1, propD > 0 & propD < 1.1)
 t2 <- filter(t2, propD > 0 & propD < 1.1)
 t3 <- filter(t3, propD > 0 & propD < 1.1)
 
 #Also need to rename the column names so the propD is identifiable to sprecific timepoints
+
 colnames(t0)[colnames(t0) == "propD"] <- "propD.t0"
 colnames(t1)[colnames(t1) == "propD"] <- "propD.t1"
 colnames(t2)[colnames(t2) == "propD"] <- "propD.t2"
 colnames(t3)[colnames(t3) == "propD"] <- "propD.t3"
 
 #creating a table that has only the info needed for graphing and columns that are unique except for sample name so when I join them all the sample info for a certain coral ID will be on the same row
+
 T0 <- t0[c(1,24)]
 T1 <- t1[c(1,24)]
 T2 <- t2[c(1,24)]
 T3 <- t3[c(1,24)]
 
 #time to join the timepoints into one table
+
 propD_df <- full_join(T0, T1)
 propD_df <- full_join(propD_df, T2)
 propD_df <- full_join(propD_df, T3)
@@ -149,6 +153,7 @@ C_df <- filter(fulltable, Treatment.1 == "C")
 #Now just plotted the same way as before
 
 #-------------------------------------HIGH HEAT-----------------------------------------
+
 #Next step to plot C - D ratios pre and post recovery, one of Ross's past papers used innitial proportion clade D on x axis and recovered proportion clade D on the y axis, I think I need to separate fulltable into separate timepoint dataframes. In hindsight it would have been WAY easier to split the dataframe AFTER all the other stuff, but live and learn
 
 t0_HT <- filter(HT_df, grepl("T0", timepoint))
@@ -156,26 +161,29 @@ t1_HT <- filter(HT_df, grepl("T1", timepoint))
 t2_HT <- filter(HT_df, grepl("T2", timepoint))
 t3_HT <- filter(HT_df, grepl("T3", timepoint))
 
-
 #Filter out any NaN values
+
 t0_HT <- filter(t0_HT, propD > 0 & propD < 1.1)
 t1_HT <- filter(t1_HT, propD > 0 & propD < 1.1)
 t2_HT <- filter(t2_HT, propD > 0 & propD < 1.1)
 t3_HT <- filter(t3_HT, propD > 0 & propD < 1.1)
 
 #Also need to rename the column names so the propD is identifiable to sprecific timepoints
+
 colnames(t0_HT)[colnames(t0_HT) == "propD"] <- "propD.t0_HT"
 colnames(t1_HT)[colnames(t1_HT) == "propD"] <- "propD.t1_HT"
 colnames(t2_HT)[colnames(t2_HT) == "propD"] <- "propD.t2_HT"
 colnames(t3_HT)[colnames(t3_HT) == "propD"] <- "propD.t3_HT"
 
 #creating a table that has only the info needed for graphing and columns that are unique except for sample name so when I join them all the sample info for a certain coral ID will be on the same row
+
 T0_HT <- t0_HT[c(1,24)]
 T1_HT <- t1_HT[c(1,24)]
 T2_HT <- t2_HT[c(1,24)]
 T3_HT <- t3_HT[c(1,24)]
 
 #time to join the timepoints into one table
+
 propD_HT <- full_join(T0_HT, T1_HT)
 propD_HT <- full_join(propD_HT, T2_HT)
 propD_HT <- full_join(propD_HT, T3_HT)
@@ -189,8 +197,8 @@ propD_t0t2_HT <- ggplot(propD_HT, aes(x = propD.t0_HT, y = propD.t2_HT)) +
   #xlim(0,1) +
   #ylim(0,1) +
   geom_abline(intercept = 0, slope = 1)
-
 propD_t0t2_HT
+
 #-----------------------------------------------------------------------------------------
 
 #---------------------------------------HIGH LIGHT----------------------------------------
@@ -202,26 +210,29 @@ t1_HL <- filter(HL_df, grepl("T1", timepoint))
 t2_HL <- filter(HL_df, grepl("T2", timepoint))
 t3_HL <- filter(HL_df, grepl("T3", timepoint))
 
-
 #Filter out any NaN values
+
 t0_HL <- filter(t0_HL, propD > 0 & propD < 1.1)
 t1_HL <- filter(t1_HL, propD > 0 & propD < 1.1)
 t2_HL <- filter(t2_HL, propD > 0 & propD < 1.1)
 t3_HL <- filter(t3_HL, propD > 0 & propD < 1.1)
 
 #Also need to rename the column names so the propD is identifiable to sprecific timepoints
+
 colnames(t0_HL)[colnames(t0_HL) == "propD"] <- "propD.t0_HL"
 colnames(t1_HL)[colnames(t1_HL) == "propD"] <- "propD.t1_HL"
 colnames(t2_HL)[colnames(t2_HL) == "propD"] <- "propD.t2_HL"
 colnames(t3_HL)[colnames(t3_HL) == "propD"] <- "propD.t3_HL"
 
 #creating a table that has only the info needed for graphing and columns that are unique except for sample name so when I join them all the sample info for a certain coral ID will be on the same row
+
 T0_HL <- t0_HL[c(1,24)]
 T1_HL <- t1_HL[c(1,24)]
 T2_HL <- t2_HL[c(1,24)]
 T3_HL <- t3_HL[c(1,24)]
 
 #time to join the timepoints into one table
+
 propD_HL <- full_join(T0_HL, T1_HL)
 propD_HL <- full_join(propD_HL, T2_HL)
 propD_HL <- full_join(propD_HL, T3_HL)
@@ -237,9 +248,11 @@ propD_t0t2_HL <- ggplot(propD_HL, aes(x = propD.t0_HL, y = propD.t2_HL)) +
   geom_abline(intercept = 0, slope = 1)
 
 propD_t0t2_HL
+
 #-----------------------------------------------------------------------------------------
 
 #-------------------------------------CONTROL---------------------------------------------
+
 #Next step to plot C - D ratios pre and post recovery, one of Ross's past papers used innitial proportion clade D on x axis and recovered proportion clade D on the y axis, I think I need to separate fulltable into separate timepoint dataframes. In hindsight it would have been WAY easier to split the dataframe AFTER all the other stuff, but live and learn
 
 t0_C <- filter(C_df, grepl("T0", timepoint))
@@ -247,26 +260,29 @@ t1_C <- filter(C_df, grepl("T1", timepoint))
 t2_C <- filter(C_df, grepl("T2", timepoint))
 t3_C <- filter(C_df, grepl("T3", timepoint))
 
-
 #Filter out any NaN values
+
 t0_C <- filter(t0_C, propD > 0 & propD < 1.1)
 t1_C <- filter(t1_C, propD > 0 & propD < 1.1)
 t2_C <- filter(t2_C, propD > 0 & propD < 1.1)
 t3_C <- filter(t3_C, propD > 0 & propD < 1.1)
 
 #Also need to rename the column names so the propD is identifiable to sprecific timepoints
+
 colnames(t0_C)[colnames(t0_C) == "propD"] <- "propD.t0_C"
 colnames(t1_C)[colnames(t1_C) == "propD"] <- "propD.t1_C"
 colnames(t2_C)[colnames(t2_C) == "propD"] <- "propD.t2_C"
 colnames(t3_C)[colnames(t3_C) == "propD"] <- "propD.t3_C"
 
 #creating a table that has only the info needed for graphing and columns that are unique except for sample name so when I join them all the sample info for a certain coral ID will be on the same row
+
 T0_C <- t0_C[c(1,24)]
 T1_C <- t1_C[c(1,24)]
 T2_C <- t2_C[c(1,24)]
 T3_C <- t3_C[c(1,24)]
 
 #time to join the timepoints into one table
+
 propD_C <- full_join(T0_C, T1_C)
 propD_C <- full_join(propD_C, T2_C)
 propD_C <- full_join(propD_C, T3_C)
@@ -282,8 +298,7 @@ propD_t0t2_C <- ggplot(propD_C, aes(x = propD.t0_C, y = propD.t2_C)) +
   geom_abline(intercept = 0, slope = 1)
 
 propD_t0t2_C
+
 #-----------------------------------------------------------------------------------------
 ```
 *NOTE*: The object "plates" is a list of all of the .txt files in the data/qpcr folder
-
-
