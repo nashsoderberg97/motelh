@@ -102,8 +102,8 @@ pamtotal1$treatment <- substr(pamtotal1$Tank, 4, 5)
 #Need a dataframe of means to clean the plot up a bit
 stress1_df <- aggregate(pamtotal1[,3], list(pamtotal1$date, pamtotal1$treatment), mean)
 
-stress1_plot <- ggplot(pamtotal1, aes(x = date, y = Fv.Fm)) +
-  geom_line(aes(group = treatment)) 
+stress1_plot <- ggplot(pamtotal1, aes(x = date, y = Fv.Fm, color = treatment)) +
+  geom_smooth(method = "loess")
 
 min <- as.Date(NA)
 max <- as.Date("2018-03-21")
