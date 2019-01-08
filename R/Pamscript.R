@@ -103,9 +103,22 @@ pamtotal1$treatment <- substr(pamtotal1$Tank, 4, 5)
 stress1_df <- aggregate(pamtotal1[,3], list(pamtotal1$date, pamtotal1$treatment), mean)
 
 stress1_plot <- ggplot(pamtotal1, aes(x = date, y = Fv.Fm)) +
-  geom_line(aes(group = treatment))
+  geom_line(aes(group = treatment)) 
+
+min <- as.Date(NA)
+max <- as.Date("2018-03-21")
+stress1_plot + scale_x_date(limits = c(min, max))
 
 stress1_plot
+
+#Now I need to make a plot to utilize the means of each of the treatments to clean up the plot for a clearer picture of what's happening, also it would be good to differentiate the different treatments by different colored lines with ggplot
+#May have to separate the treatments into different dataframes if I can't figure out how to incorporate mean into the ggplot
+
+
+
+
+
+
 
 boxplot(control$Fv.Fm~control$date)
 
