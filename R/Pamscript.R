@@ -107,9 +107,14 @@ stress1_plot <- ggplot(pamtotal1, aes(x = date, y = Fv.Fm, color = treatment)) +
 
 min <- as.Date(NA)
 max <- as.Date("2018-03-21")
-stress1_plot + scale_x_date(limits = c(min, max))
+stress1_plot + scale_x_date(limits = c(min, max)) + geom_point(stat = "mean")
 
-stress1_plot
+group_means <- pamtotal1 %>%
+  group_by(treatment, date) %>%
+  summarise(Fv.Fm = mean(Fv.Fm))
+
+stress1_plot + scale_x_date(limits = c(min, max)) + 
+  geom_point(data = group_means)
 
 #Now I need to make a plot to utilize the means of each of the treatments to clean up the plot for a clearer picture of what's happening, also it would be good to differentiate the different treatments by different colored lines with ggplot
 #May have to separate the treatments into different dataframes if I can't figure out how to incorporate mean into the ggplot
