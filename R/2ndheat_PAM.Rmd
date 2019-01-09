@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
+install.packages("janitor")
 library(tidyverse)
 library(stringr)
 library(janitor)

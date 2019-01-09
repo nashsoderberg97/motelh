@@ -1,0 +1,115 @@
+---
+title: "Pamscript"
+author: "Nash Soderberg"
+date: "1/8/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library("devtools")
+library("steponeR")
+library("janitor")
+```
+## Background
+This experiment was composed of 2 treatment periods. The first treatment period had 3 groups differentiated by their environmental conditions: high temperature (HT), high light (HL), and control (C). The second stress separated each of these 3 groups evenly into 2 groups each: high temperature (HT), and control(C). Separating the corals into 3 groups, and then again splitting each of those groups into 2 resulted in 6 total groups with unique treatment histories.
+
+To monitor the conditions of the corals, one of the things measured along the course of the experiment was fv/fm. This is measured via PAM flourometry. This method is often used to obtain fv/fm values which can be used as a proxy to determine the amount of symbiont cells in a particular coral. 
+
+## Loading the PAM data
+The PAM data was saved in .tsv files, which need to be read into a dataframe in R. Also, the date in these dataframes needs to be read as a date as well. 
+```{r load_data}
+pam01 <- read.table(file = "data/pam/pam20180131.tsv", fill = TRUE, header = T, sep = "\t")
+pam01 <- pam01[,1:3]
+pam01$date <- as.Date("2018-01-31")
+
+pam02 <- read.table(file = "data/pam/pam20180202.tsv", fill = TRUE, header = T, sep = "\t")
+pam02 <- pam02[,1:3]
+pam02$date <- as.Date("2018-02-02")
+
+pam03 <- read.table(file = "data/pam/pam20180205.tsv", fill = TRUE, header = T, sep = "\t")
+pam03 <- pam03[,1:3]
+pam03$date <- as.Date("2018-02-05")
+
+pam04 <- read.table(file = "data/pam/pam20180207.tsv", fill = TRUE, header = T, sep = "\t")
+pam04 <- pam04[,1:3]
+pam04$date <- as.Date("2018-02-07")
+
+pam05 <- read.table(file = "data/pam/pam20180209.tsv", fill = TRUE, header = T, sep = "\t")
+pam05 <- pam05[,1:3]
+pam05$date <- as.Date("2018-02-09")
+
+pam06 <- read.table(file = "data/pam/pam20180212.tsv", fill = TRUE, header = T, sep = "\t")
+pam06 <- pam06[,1:3]
+pam06$date <- as.Date("2018-02-12")
+
+pam07 <- read.table(file = "data/pam/pam20180214.tsv", fill = TRUE, header = T, sep = "\t")
+pam07 <- pam07[,1:3]
+pam07$date <- as.Date("2018-02-14")
+
+pam08 <- read.table(file = "data/pam/pam20180216.tsv", fill = TRUE, header = T, sep = "\t")
+pam08 <- pam08[,1:3]
+pam08$date <- as.Date("2018-02-16")
+
+pam10 <- read.table(file = "data/pam/pam20180228.tsv", fill = TRUE, header = T, sep = "\t")
+pam10 <- pam10[,1:3]
+pam10$date <- as.Date("2018-02-28")
+
+pam11 <- read.table(file = "data/pam/pam20180321.tsv", fill = TRUE, header = T, sep = "\t")
+pam11 <- pam11[,1:3]
+pam11$date <- as.Date("2018-03-21")
+
+pam12 <- read.table(file = "data/pam/pam20180523.tsv", fill = TRUE, header = T, sep = "\t")
+pam12 <- pam12[,1:3]
+pam12$date <- as.Date("2018-05-23")
+
+pam13 <- read.table(file = "data/pam/pam20180525.tsv", fill = TRUE, header = T, sep = "\t")
+pam13 <- pam13[,1:3]
+pam13$date <- as.Date("2018-05-25")
+
+pam14 <- read.table(file = "data/pam/pam20180526.tsv", fill = TRUE, header = T, sep = "\t")
+pam14 <- pam14[,1:3]
+pam14$date <- as.Date("2018-05-26")
+
+pam15 <- read.table(file = "data/pam/pam20180527.tsv", fill = TRUE, header = T, sep = "\t")
+pam15 <- pam15[,1:3]
+pam15$date <- as.Date("2018-05-27")
+
+pam16 <- read.table(file = "data/pam/pam20180528.tsv", fill = TRUE, header = T, sep = "\t")
+pam16 <- pam16[,1:3]
+pam16$date <- as.Date("2018-05-28")
+
+pam17 <- read.table(file = "data/pam/pam20180528.tsv", fill = TRUE, header = T, sep = "\t")
+pam17 <- pam17[,1:3]
+pam17$date <- as.Date("2018-05-28")
+
+pam18 <- read.table(file = "data/pam/pam20180529.tsv", fill = TRUE, header = T, sep = "\t")
+pam18 <- pam18[,1:3]
+pam18$date <- as.Date("2018-05-29")
+```
+
+
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
