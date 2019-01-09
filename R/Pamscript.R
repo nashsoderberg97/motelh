@@ -77,8 +77,8 @@ pamtotal <- rbind(pam01, pam02, pam03, pam04, pam05, pam06, pam07, pam08, pam10,
 boxplot(pamtotal$Fv.Fm~pamtotal$date)
 anova(lm(pam1$Fv.Fm~pam1$Tank))
 
-pamtotal1 <- pamtotal
-pamtotal1$Tank <- as.character(pamtotal1$Tank)
+
+pamtotal$Tank <- as.character(pamtotal$Tank)
 
 #reads treatment from tank and puts in column "treatment" of pamtotal
 if (nchar(pamtotal$Tank, type = "chars", allowNA = FALSE, keepNA = NA) > 3) {
@@ -89,27 +89,27 @@ pamtotal$treatment <- substr(pamtotal$Tank, 4, 5)
 control <- subset(pamtotal, treatment == "C")
 
 #fixes the formatting of the later pam tables
-pamtotal1$Tank <- replace(pamtotal1$Tank, pamtotal1$Tank=="6AC", "6A-C")
-pamtotal1$Tank <- replace(pamtotal1$Tank, pamtotal1$Tank=="6AH", "6A-HT")
-pamtotal1$Tank <- replace(pamtotal1$Tank, pamtotal1$Tank=="7AC", "7A-C")
-pamtotal1$Tank <- replace(pamtotal1$Tank, pamtotal1$Tank=="7AH", "7A-HT")
-pamtotal1$Tank <- replace(pamtotal1$Tank, pamtotal1$Tank=="7BC", "7B-C")
-pamtotal1$Tank <- replace(pamtotal1$Tank, pamtotal1$Tank=="7BH", "7B-HT")
+pamtotal$Tank <- replace(pamtotal$Tank, pamtotal$Tank=="6AC", "6A-C")
+pamtotal$Tank <- replace(pamtotal$Tank, pamtotal$Tank=="6AH", "6A-HT")
+pamtotal$Tank <- replace(pamtotal$Tank, pamtotal$Tank=="7AC", "7A-C")
+pamtotal$Tank <- replace(pamtotal$Tank, pamtotal$Tank=="7AH", "7A-HT")
+pamtotal$Tank <- replace(pamtotal$Tank, pamtotal$Tank=="7BC", "7B-C")
+pamtotal$Tank <- replace(pamtotal$Tank, pamtotal$Tank=="7BH", "7B-HT")
 
 #creates a separate column for treatment
-pamtotal1$treatment <- substr(pamtotal1$Tank, 4, 5)
+pamtotal$treatment <- substr(pamtotal$Tank, 4, 5)
 
 #Need a dataframe of means to clean the plot up a bit
-stress1_df <- aggregate(pamtotal1[,3], list(pamtotal1$date, pamtotal1$treatment), mean)
+stress1_df <- aggregate(pamtotal[,3], list(pamtotal$date, pamtotal$treatment), mean)
 
-stress1_plot <- ggplot(pamtotal1, aes(x = date, y = Fv.Fm, color = treatment)) +
+stress1_plot <- ggplot(pamtotal, aes(x = date, y = Fv.Fm, color = treatment)) +
   geom_smooth(method = "loess")
 
 min <- as.Date(NA)
 max <- as.Date("2018-03-21")
 stress1_plot + scale_x_date(limits = c(min, max)) + geom_point(stat = "mean")
 
-group_means <- pamtotal1 %>%
+group_means <- pamtotal %>%
   group_by(treatment, date) %>%
   summarise(Fv.Fm = mean(Fv.Fm))
 
