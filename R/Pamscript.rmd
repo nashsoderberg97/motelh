@@ -102,6 +102,8 @@ pamtotal <- rbind(pam01, pam02, pam03, pam04, pam05, pam06, pam07, pam08, pam10,
 There are discrepancies in how the "Tank" column are formatted between some of the later and earlier PAM sheets, so this needs to be corrected
 
 ```{r}
+pamtotal$Tank <- as.character(pamtotal$Tank) #converts to char
+
 pamtotal$Tank <- replace(pamtotal$Tank, pamtotal$Tank=="6AC", "6A-C")
 pamtotal$Tank <- replace(pamtotal$Tank, pamtotal$Tank=="6AH", "6A-HT")
 pamtotal$Tank <- replace(pamtotal$Tank, pamtotal$Tank=="7AC", "7A-C")
@@ -114,8 +116,6 @@ pamtotal$Tank <- replace(pamtotal$Tank, pamtotal$Tank=="7BH", "7B-HT")
 Next, the treatment that each coral experienced will be added into a new column in pamtotal. This is obtained from the "Tank" column, so we need to convert this column to characters and then extract the treatment from those characters.
 
 ```{r}
-pamtotal1$Tank <- as.character(pamtotal1$Tank) #converts to char
-
 if (nchar(pamtotal$Tank, type = "chars", allowNA = FALSE, keepNA = NA) > 3) {
 pamtotal$treatment <- substr(pamtotal$Tank, 4, 5)
 } else {
